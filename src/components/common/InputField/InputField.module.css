@@ -1,0 +1,48 @@
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  height: 45px;
+  padding: 12px 12px;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  color: var(--fg-color-5);
+  border: 1px solid var(--fg-color-4);
+  border-radius: 16px;
+  background-color: var(--bg-color);
+  outline: none;
+}
+
+.input:focus {
+  border-width: 2px;
+  border-color: var(--fg-color-4);
+}
+
+.error {
+  border-width: 2px;
+  border-color: var(--red-1) !important;
+}
+
+.label {
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  background-color: var(--bg-color);
+  padding: 0 4px;
+  font-size: 14px;
+  color: var(--fg-color-5);
+  pointer-events: none;
+}
+
+.input:focus + .label {
+  font-weight: 500;
+}
+
+.errorMessage {
+  color: var(--red-1);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}

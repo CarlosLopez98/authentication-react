@@ -1,0 +1,35 @@
+.container {
+  position: relative;
+  padding: 12px 16px;
+  border-radius: 8px;
+  color: var(--fg-color);
+  font-size: 14px;
+  background-color: var(--bg-toast);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px;
+  height: 100%;
+  border-radius: 0 8px 8px 0;
+}
+
+.info::after {
+  background-color: var(--green-1);
+}
+
+.success::after {
+  background-color: var(--green-3);
+}
+
+.warning::after {
+  background-color: var(--orange-1);
+}
+
+.error::after {
+  background-color: var(--red-1);
+}
