@@ -18,14 +18,12 @@ This is the frontend app for the API build with Spring Boot. [Spring boot api](h
 
 ## ✨ Features
 
-- 📷 Load a static image (frame) of a football match play
-- 🧭 Manually draw at least two horizontal and two vertical field lines
-- 📐 Automatically compute two vanishing points using perspective geometry
-- ⚽ Select attacker and defender reference points on the field
-- 📏 Project a baseline using the horizontal vanishing point
-- 🟥 Visual projection of the attacker's and defender's most advanced body parts
-- 🧠 Helps visually determine potential offside situations
-- 🎨 Intuitive JavaFX GUI for drawing and analysis
+- Registration form with data validation.
+- Login form with error handling.
+- API consumption for registration and login.
+- Secure JWT storage in localStorage.
+- Automatic redirection based on authentication status.
+- Protected page displaying authenticated user data.
 
 ## 🛠 Technologies
 
