@@ -1,54 +1,96 @@
-# React + TypeScript + Vite
+# Authentication App - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend app for the API build with Spring Boot. [Spring boot api](https://github.com/carloslopez98/authentication-api-spring.git)
 
-Currently, two official plugins are available:
+## Table of contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Demo](#-demo)
+- [Features](#-features)
+- [Technologies](#-technologies)
+- [Project structure](#-project-structure)
+- [Installation](#-installation)
+- [Author](#-author)
 
-## Expanding the ESLint configuration
+## 🎬 Demo
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+![Demo project gif](./assets/demo/auth_demo.jpg)
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## ✨ Features
+
+- 📷 Load a static image (frame) of a football match play
+- 🧭 Manually draw at least two horizontal and two vertical field lines
+- 📐 Automatically compute two vanishing points using perspective geometry
+- ⚽ Select attacker and defender reference points on the field
+- 📏 Project a baseline using the horizontal vanishing point
+- 🟥 Visual projection of the attacker's and defender's most advanced body parts
+- 🧠 Helps visually determine potential offside situations
+- 🎨 Intuitive JavaFX GUI for drawing and analysis
+
+## 🛠 Technologies
+
+This project uses the following technologies:
+
+- **React 19+**
+- **React Router Dom**
+- **Typescript**
+- **Zod**
+- **Vite**
+
+## 📂 Project structure
+
+```bash
+|── public/
+├── src/
+    ├── assets/
+    ├── components/
+    ├── context/
+    ├── hooks/
+    ├── pages/
+    ├── types/
+    ├── validations/
+    ├── App.css
+    ├── App.tsx
+    ├── index.css
+    └── main.tsx
+├── .gitignore
+├── index.html
+├── package.json
+└── README.md
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💻 Installation
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+1. Clone the repository:
+```bash
+git clone https://github.com/carloslopez98/authentication-react.git
+cd authentication-react
 ```
+
+2. Install the dependencies:
+```bash
+npm install
+```
+
+3. Run the development server:
+```bash
+npm run dev
+```
+
+The frontend will be running in:
+```
+http://localhost:5173
+```
+
+## 📌 Main pages
+
+- **Login**: Log in form.
+- **Register**: Register form.
+- **Home**: Show that the user is authenticated.
+
+## 👤 Author
+
+**Carlos Lopez**
+- GitHub: [@carloslopez98](https://github.com/carloslopez98)
+- Email: carloslopez18.c@gmail.com
+- LinkedIn: [linkedin.com/in/carloslopez98](https://linkedin.com/in/carloslopez98)
